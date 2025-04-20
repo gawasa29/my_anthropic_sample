@@ -1,0 +1,16 @@
+// tsconfig.json の抜粋例
+{
+  // tsconfig.json の compilerOptions 部分
+  "compilerOptions": {
+    "target": "ES2016", // Node.jsで動かすなら比較的新しいものでOK
+    "module": "CommonJS", // Node.jsで一般的な形式
+    "outDir": "./build",   // 出力先を 'dist' フォルダに
+    "rootDir": "./src",   // ソースコードは 'src' フォルダに
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+    // "include": ["src/**/*"], /* コンパイル対象に含めるファイル/フォルダのパターン */
+    // "exclude": ["node_modules"] /* コンパイル対象から除外するファイル/フォルダのパターン */
+  }
